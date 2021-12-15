@@ -1,0 +1,28 @@
+header-arrow {
+    height: 7px;
+    width: 10px;
+    background-image: url("../images/icon-arrow-light.svg");
+    background-repeat: no-repeat;
+    border: none;
+    content: "";
+    position: relative;
+    top: 3.5px;
+}
+
+
+@mixin backgroundAndColor($backgroundColor, $color) {
+    background-color: $backgroundColor;
+    color: $color;
+}
+
+.transparent {
+    @include backgroundAndColor(transparent, $word-color-2);
+}
+
+.have-background {
+    @include backgroundAndColor($button-background, $word-color-3);
+}
+
+.have-background:hover {
+    @include backgroundAndColor($button-background-hover, $word-color-1);
+}

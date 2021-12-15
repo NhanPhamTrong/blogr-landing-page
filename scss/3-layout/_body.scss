@@ -1,0 +1,98 @@
+main {
+    #part-0 {
+        padding: 10% 12% 15%;
+        background-image: url("../images/illustration-editor-desktop.svg");
+        background-position: center right -280px;
+        background-repeat: no-repeat;
+
+        h2 {
+            text-align: center;
+        }
+
+        h3.mt-5 {
+            margin-top: 5rem !important;
+        }
+
+        div {
+            padding-right: 57%;
+            line-height: 1.75rem;
+        }
+    }
+
+    #part-1 {
+        margin-bottom: 10%;
+        padding: 6% 12% 6% 55%;
+        background-color: $part-1-background;
+        background-image: url("../images/bg-pattern-circles.svg");
+        background-position: top -550px left -215px;
+        background-repeat: no-repeat;
+        border-radius: 0 100px 0 100px;
+        line-height: 1.75rem;
+        position: relative;
+
+        h2, p {
+            color: $word-color-1;
+        }
+    }
+
+    #part-1:before {
+        height: 580px;
+        width: 50%;
+        background-image: url("../images/illustration-phones.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: -70px;
+        left: 0;
+    }
+
+    #part-2 {
+        padding: 14% 12% 14% 55%;
+        line-height: 1.75rem;
+        background-image: url("../images/illustration-laptop-desktop.svg");
+        background-position: left -280px center;
+        background-repeat: no-repeat;
+
+        h3.mt-5 {
+            margin-top: 5rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    main {
+        text-align: center;
+
+        #part-0 {
+            padding: 18% 8% 14%;
+            background-image: url("../images/illustration-editor-mobile.svg");
+            background-position: center top 130px;
+
+            div {
+                margin-top: 22rem;
+                padding-right: 0;
+            }
+        }
+
+        #part-1 {
+            margin-top: 75% !important;
+            padding: 40% 8% 30%;
+            background-position: center top -230px;
+            background-size: cover;
+        }
+
+        #part-1:before {
+            background-position: center;
+            background-size: contain;
+            top: -325px;
+            left: 0;
+        }
+
+        #part-2 {
+            padding: 105% 8% 25%;
+            background-image: url("../images/illustration-laptop-mobile.svg");
+            background-position: top;
+        }
+    }
+}
